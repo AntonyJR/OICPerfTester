@@ -1,0 +1,46 @@
+{
+  "iterations": 5,
+  "baseurl": "https:/oic.integration.oraclecloud.com",
+  "secretOCID": "ocid1.vaultsecret.oc1.rgn.123456789abcdefghijklmnopqrstuvwxyz",
+  "jwtSecretOCID": "ocid1.vaultsecret.oc1.rgn.123456789abcdefghijklmnopqrstuvwxyz",
+  "requests": [
+    {
+      "name": "Request 1",
+      "path": "/my/path",
+      "verb": "GET",
+      "params": [
+        {
+          "p1": "value1",
+          "p2": "value2"
+        }
+      ],
+      "elapsedFields": [
+        {
+          "reportName": "SubTime1",
+          "elapsedPath": ".elapsedTime1"
+        },
+        {
+          "reportName": "SubTime2",
+          "elapsedPath": ".elapsedTime2"
+        }
+      ]
+    },
+    {
+      "name": "Request 2",
+      "path": "/my/path2",
+      "verb": "POST",
+      "payloadType": "application/json",
+      "payload": "{\"tag\" : \"value\"}",
+      "elapsedFields": [
+        {
+          "reportName": "SubTime1",
+          "elapsedPath": ".elapsedTime1"
+        },
+        {
+          "reportName": "SubTime2",
+          "elapsedPath": ".elapsedTime2"
+        }
+      ]
+    }
+  ]
+}
