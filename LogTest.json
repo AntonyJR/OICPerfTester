@@ -1,0 +1,9 @@
+{
+  "iterations": 500,
+  "targets": {
+    "include": "ME_targets.json"
+  },
+  "requests": {
+    "include": "LogRequests.json"
+  }
+}

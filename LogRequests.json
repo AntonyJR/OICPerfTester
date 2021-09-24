@@ -1,0 +1,58 @@
+  [
+    {
+      "name" : "GET Local Invoke JSON",
+      "path" : "/ic/api/integration/v1/flows/rest/LOGGER_CLIENT/1.0/wrapper",
+      "verb" : "GET",
+      "params" : {
+        "msg" : "Local Invoke JSON"
+      },
+      "elapsedFields" : [
+        {
+          "reportName" : "LogCall",
+          "elapsedPath" : "$.elapsedlog"
+        }
+      ]
+    },
+    {
+      "name" : "GET Remote Invoke JSON",
+      "path" : "/ic/api/integration/v1/flows/rest/LOGGER_CLIENT_REMOTE/1.0/wrapper",
+      "verb" : "GET",
+      "params" : {
+        "msg" : "Remote Invoke JSON"
+      },
+      "elapsedFields" : [
+        {
+          "reportName" : "LogCall",
+          "elapsedPath" : "$.elapsedlog"
+        }
+      ]
+    },
+    {
+      "name" : "GET Inline Log JSON",
+      "path" : "/ic/api/integration/v1/flows/rest/LOGGER_NO_CALL/1.0/wrapper",
+      "verb" : "GET",
+      "params" : {
+        "msg" : "Inline Log JSON"
+      },
+      "elapsedFields" : [
+        {
+          "reportName" : "LogCall",
+          "elapsedPath" : "$.elapsedlog"
+        }
+      ]
+    },
+    {
+      "name" : "GET JWT Remote Invoke JSON",
+      "path" : "/ic/api/integration/v1/flows/rest/LOGGER_CLIENT_OAUTH_REMOTE/1.0/wrapper",
+      "verb" : "GET",
+      "payload" : {
+        "msg" : "Get JWT Remote Invoke JSON"
+      },
+      "elapsedFields" : [
+        {
+          "reportName" : "LogCall",
+          "elapsedPath" : "$.elapsedlog"
+        }
+      ]
+    }
+  ]
